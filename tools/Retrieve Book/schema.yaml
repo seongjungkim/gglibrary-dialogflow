@@ -1,0 +1,78 @@
+openapi: 3.0.0
+info:
+  title: Gyeonggi Library Book API
+  version: 1.0.0
+  description: >-
+    This is the OpenAPI specification of a Gyeonggi library service. It is intended to
+    illustrate how to declare your REST API as an OpenAPI Tool.
+servers:
+  - url: 'https://gl-fulfillment-hxgt5fuu5q-du.a.run.app'
+paths:
+  /books:
+    get:
+      summary: 모든 도서 목록을 조회한다.
+      operationId: list_books
+      responses:
+        '200':
+          description: An array of books
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+  '/books/{keyword}/{query}':
+    get:
+      summary: 키워드로 도서를 검색한다.
+      operationId: get_books_by_keyword
+      parameters:
+        - name: keyword
+          in: path
+          required: true
+          description: 키워드
+          schema:
+            type: string
+        - name: query
+          in: path
+          required: true
+          description: 사용자 발언 (user utterance)
+          schema:
+            type: string
+      responses:
+        '200':
+          description: An array of books
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: 결과 상태
+                  items:
+                    type: array
+                    description: 도서 목록
+                    $ref: '#/components/schemas/Book'
+components:
+  schemas:
+    Book:
+      type: object
+      required:
+        - title
+        - author
+        - book_key
+      properties:
+        title:
+          type: string
+        author:
+          type: string
+        book_key:
+          type: string
+        ea_isbn:
+          type: string
+        loan_able:
+          type: string
+        shelf_loc_code:
+          type: string
+        call_no:
+          type: string

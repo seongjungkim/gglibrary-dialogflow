@@ -1,0 +1,13 @@
+{
+  "name": "3a1e4694-3129-45fe-8099-9840f63cd1bb",
+  "displayName": "Recommend books",
+  "description": "Recommend books by keyword, age, class, title or author",
+  "openApiSpec": {
+  
+  },
+  "sharedSchemas": [ {
+    "name": "Book",
+    "schema": "{\n  \"required\" : [ \"author\", \"book_key\", \"title\" ],\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"title\" : {\n      \"type\" : \"string\"\n    },\n    \"author\" : {\n      \"type\" : \"string\"\n    },\n    \"book_key\" : {\n      \"type\" : \"string\"\n    },\n    \"ea_isbn\" : {\n      \"type\" : \"string\"\n    },\n    \"loan_able\" : {\n      \"type\" : \"string\"\n    },\n    \"shelf_loc_code\" : {\n      \"type\" : \"string\"\n    },\n    \"call_no\" : {\n      \"type\" : \"string\"\n    }\n  }\n}"
+  } ],
+  "toolType": "CUSTOMIZED_TOOL"
+}
