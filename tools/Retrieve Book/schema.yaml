@@ -76,3 +76,5 @@ components:
           type: string
         call_no:
           type: string
+        category:
+          type: string  

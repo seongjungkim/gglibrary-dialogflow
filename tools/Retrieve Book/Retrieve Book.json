@@ -7,7 +7,7 @@
   },
   "sharedSchemas": [ {
     "name": "Book",
-    "schema": "{\n  \"required\" : [ \"author\", \"book_key\", \"title\" ],\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"title\" : {\n      \"type\" : \"string\"\n    },\n    \"author\" : {\n      \"type\" : \"string\"\n    },\n    \"book_key\" : {\n      \"type\" : \"string\"\n    },\n    \"ea_isbn\" : {\n      \"type\" : \"string\"\n    },\n    \"loan_able\" : {\n      \"type\" : \"string\"\n    },\n    \"shelf_loc_code\" : {\n      \"type\" : \"string\"\n    },\n    \"call_no\" : {\n      \"type\" : \"string\"\n    }\n  }\n}"
+    "schema": "{\n  \"required\" : [ \"author\", \"book_key\", \"title\" ],\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"title\" : {\n      \"type\" : \"string\"\n    },\n    \"author\" : {\n      \"type\" : \"string\"\n    },\n    \"book_key\" : {\n      \"type\" : \"string\"\n    },\n    \"ea_isbn\" : {\n      \"type\" : \"string\"\n    },\n    \"loan_able\" : {\n      \"type\" : \"string\"\n    },\n    \"shelf_loc_code\" : {\n      \"type\" : \"string\"\n    },\n    \"call_no\" : {\n      \"type\" : \"string\"\n    },\n    \"category\" : {\n      \"type\" : \"string\"\n    }\n  }\n}"
   } ],
   "toolType": "CUSTOMIZED_TOOL"
 }

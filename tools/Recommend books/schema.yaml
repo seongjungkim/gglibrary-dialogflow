@@ -40,6 +40,32 @@ paths:
                     type: array
                     description: 도서 목록
                     $ref: '#/components/schemas/Book'
+  '/recommendation/monthly':
+    get:
+      summary: 도서관 월간 추천도서를 응답한다.
+      operationId: recommend_monthly_books
+      parameters:
+        - name: keyword
+          in: path
+          required: true
+          description: 월간 추천도서
+          schema:
+            type: string
+      responses:
+        '200':
+          description: An array of books
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: 결과 상태
+                  items:
+                    type: array
+                    description: 도서 목록
+                    $ref: '#/components/schemas/Book'
 components:
   schemas:
     Book:
@@ -62,4 +88,6 @@ components:
         shelf_loc_code:
           type: string
         call_no:
+          type: string
+        category:
           type: string
