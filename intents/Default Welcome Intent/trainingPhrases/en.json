@@ -18,11 +18,11 @@
   }, {
     "id": "bcfafd3e-486a-4dc1-bfa0-e33133fa79d1",
     "parts": [ {
-      "text": "hello hi",
+      "text": "안녕하세요",
       "auto": true
     } ],
     "repeatCount": 1,
-    "languageCode": "en"
+    "languageCode": "ko"
   }, {
     "id": "fe84888b-a6d7-4825-86a1-446dd67d1e46",
     "parts": [ {
