@@ -1,11 +1,45 @@
 {
+  "displayName": "gyeonggi-library",
   "defaultLanguageCode": "en",
   "timeZone": "America/Los_Angeles",
+  "enableLogging": true,
   "projectNumber": 923091573679,
+  "speechToTextSettings": {
+  
+  },
+  "enableStackdriverLogging": true,
   "advancedSettings": {
-    "loggingSettings": {
+    "audioExportGcsDestination": {
     
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
     }
   },
-  "startPlaybook": "Default Generative Agent"
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+  
+  },
+  "duplexSettings": {
+  
+  },
+  "answerFeedbackSettings": {
+  
+  },
+  "startPlaybook": "Default Generative Agent",
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
 }
