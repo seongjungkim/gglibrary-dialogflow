@@ -28,7 +28,7 @@
   },
   "bigqueryExportSettings": {
     "enabled": true,
-    "bigqueryTable": "projects/qnacom-service/datasets/gglibrary/tables/dialogflow_log_5"
+    "bigqueryTable": "projects/qnacom-service/datasets/gglibrary/tables/dialogflow_log_3"
   },
   "speakerIdSettings": {
   
