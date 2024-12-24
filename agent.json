@@ -26,6 +26,10 @@
       "enableInteractionLogging": true
     }
   },
+  "bigqueryExportSettings": {
+    "enabled": true,
+    "bigqueryTable": "projects/qnacom-service/datasets/gglibrary/tables/dialogflow_log"
+  },
   "speakerIdSettings": {
   
   },
