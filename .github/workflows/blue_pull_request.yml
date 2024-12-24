@@ -33,10 +33,23 @@ jobs:
         uses: rheuvel89/replace-action@v1
         with: 
           files: 'agent.json'
-          replacements: 'dialogflow_log_4=dialogflow_log'
+          replacements: 'dialogflow_log_5=dialogflow_log'
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Push chaged code
+      - name: Push files to Github if changed
+        #uses: stefanzweifel/git-auto-commit-action@v4
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> "$GITHUB_OUTPUT";
+            git commit -m "Modified all files"
+            git push
+          fi
