@@ -54,5 +54,5 @@ jobs:
           if [[ -n $(git status --porcelain) ]]; then
             echo "changes=true" >> "$GITHUB_OUTPUT";
             git commit -m "Modified all files"
-            git push origin blue
+            git push -u origin blue
           fi
