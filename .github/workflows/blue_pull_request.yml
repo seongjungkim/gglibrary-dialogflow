@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   pull_request:
     #types: closed
-    types: edited # assigned synchronize
+    types: review_requested # edited assigned synchronize
     branches: [ "blue" ]
 
   # Allows you to run this workflow manually from the Actions tab
